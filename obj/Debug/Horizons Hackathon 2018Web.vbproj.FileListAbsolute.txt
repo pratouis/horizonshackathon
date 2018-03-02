@@ -1,0 +1,13 @@
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\bin\Horizons Hackathon 2018Web.dll.config
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\bin\Horizons Hackathon 2018Web.dll
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\bin\Horizons Hackathon 2018Web.pdb
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\bin\Horizons Hackathon 2018Web.xml
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\obj\Debug\Horizons Hackathon 2018Web.vbprojResolveAssemblyReference.cache
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\obj\Debug\Horizons_Hackathon_2018Web.Resources.resources
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\obj\Debug\Horizons Hackathon 2018Web.vbproj.GenerateResource.Cache
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\obj\Debug\Horizons Hackathon 2018Web.vbproj.CoreCompileInputs.cache
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\obj\Debug\Horizons Hackathon 2018Web.dll
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\obj\Debug\Horizons Hackathon 2018Web.xml
+C:\Users\dugel\source\repos\Horizons Hackathon 2018\Horizons Hackathon 2018Web\obj\Debug\Horizons Hackathon 2018Web.pdb
