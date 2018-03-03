@@ -1,0 +1,202 @@
+[
+ {
+   "desc": "Close a spreadsheet",
+   "keys": "Ctrl+W"
+ },
+ {
+   "desc": "Open a spreadsheet",
+   "keys": "Ctrl+O"
+ },
+ {
+   "desc": "Go to the Home tab",
+   "keys": "Alt+H"
+ },
+ {
+   "desc": "Save a spreadsheet",
+   "keys": "Ctrl+S"
+ },
+ {
+   "desc": "Copy",
+   "keys": "Ctrl+C"
+ },
+ {
+   "desc": "Paste",
+   "keys": "Ctrl+V"
+ },
+ {
+   "desc": "Undo",
+   "keys": "Ctrl+Z"
+ },
+ {
+   "desc": "Remove cell contents",
+   "keys": "Delete key"
+ },
+ {
+   "desc": "Choose a fill color",
+   "keys": "Alt+H, H"
+ },
+ {
+   "desc": "Cut",
+   "keys": "Ctrl+X"
+ },
+ {
+   "desc": "Go to Insert tab",
+   "keys": "Alt+N"
+ },
+ {
+   "desc": "Bold",
+   "keys": "Ctrl+B"
+ },
+ {
+   "desc": "Center align cell contents",
+   "keys": "Alt+H, A, then C"
+ },
+ {
+   "desc": "Go to Page Layout tab",
+   "keys": "Alt+P"
+ },
+ {
+   "desc": "Go to Data tab",
+   "keys": "Alt+A"
+ },
+ {
+   "desc": "Go to View tab",
+   "keys": "Alt+W"
+ },
+ {
+   "desc": "Format a cell from context menu",
+   "keys": "Shift+F10, or\nContext key"
+ },
+ {
+   "desc": "Add borders",
+   "keys": "Alt+H, B"
+ },
+ {
+   "desc": "Delete column",
+   "keys": "Alt+H,D, then C"
+ },
+ {
+   "desc": "Go to Formula tab",
+   "keys": "Alt+M"
+ },
+ {
+   "desc": "Open the Tell me box on the Ribbon and type a search term for assistance or Help content. ",
+   "keys": "Alt+Q, and then enter the search term."
+ },
+ {
+   "desc": "Open the File page and use Backstage view. ",
+   "keys": "Alt+F "
+ },
+ {
+   "desc": "Open the Home tab and format text and numbers and use the Find tool. ",
+   "keys": "Alt+H"
+ },
+ {
+   "desc": "Open the Insert tab and insert PivotTables, charts, add-ins, Sparklines, pictures, shapes, headers, or text boxes. ",
+   "keys": "Alt+N"
+ },
+ {
+   "desc": "Open the Draw tab to select a drawing tool, color and line thickness.",
+   "keys": "Alt+JI"
+ },
+ {
+   "desc": "Open the Page Layout tab and work with themes, page setup, scale, and alignment. ",
+   "keys": "Alt+P"
+ },
+ {
+   "desc": "Open the Formulas tab and insert, trace, and customize functions and calculations. ",
+   "keys": "Alt+M"
+ },
+ {
+   "desc": "Open the Data tab and connect to, sort, filter, analyze, and work with data. ",
+   "keys": "Alt+A "
+ },
+ {
+   "desc": "Open the Review tab and check spelling, add comments, and protect sheets and workbooks. ",
+   "keys": "Alt+R"
+ },
+ {
+   "desc": "Open the View tab and preview page breaks and layouts, show and hide gridlines and headings, set zoom magnification, manage windows and panes, and view macros. ",
+   "keys": "Alt+W"
+ },
+ {
+   "desc": "Open the Tell me box on the Ribbon and type a search term for assistance or Help content. ",
+   "keys": "Alt+Q, and then enter the search term."
+ },
+ {
+   "desc": "Open the File page and use Backstage view. ",
+   "keys": "Alt+F "
+ },
+ {
+   "desc": "Open the Home tab and format text and numbers and use the Find tool. ",
+   "keys": "Alt+H"
+ },
+ {
+   "desc": "Open the Insert tab and insert PivotTables, charts, add-ins, Sparklines, pictures, shapes, headers, or text boxes. ",
+   "keys": "Alt+N"
+ },
+ {
+   "desc": "Open the Draw tab to select a drawing tool, color and line thickness.",
+   "keys": "Alt+JI"
+ },
+ {
+   "desc": "Open the Page Layout tab and work with themes, page setup, scale, and alignment. ",
+   "keys": "Alt+P"
+ },
+ {
+   "desc": "Open the Formulas tab and insert, trace, and customize functions and calculations. ",
+   "keys": "Alt+M"
+ },
+ {
+   "desc": "Open the Data tab and connect to, sort, filter, analyze, and work with data. ",
+   "keys": "Alt+A "
+ },
+ {
+   "desc": "Open the Review tab and check spelling, add comments, and protect sheets and workbooks. ",
+   "keys": "Alt+R"
+ },
+ {
+   "desc": "Open the View tab and preview page breaks and layouts, show and hide gridlines and headings, set zoom magnification, manage windows and panes, and view macros. ",
+   "keys": "Alt+W"
+ },
+ {
+   "desc": "Select the active tab of the Ribbon, and activate the access keys. ",
+   "keys": "Alt or F10. To move to a different tab, use access keys or the arrow keys. "
+ },
+ {
+   "desc": "Move the focus to commands on the Ribbon. ",
+   "keys": "Tab or Shift+Tab "
+ },
+ {
+   "desc": "Move down, up, left, or right, respectively, among the items on the Ribbon. ",
+   "keys": "The Down Arrow, Up Arrow, Left Arrow, or Right Arrow key "
+ },
+ {
+   "desc": "Activate a selected button. ",
+   "keys": "Spacebar or Enter "
+ },
+ {
+   "desc": "Open the list for a selected command.",
+   "keys": "The Down Arrow key "
+ },
+ {
+   "desc": "Open the menu for a selected button. ",
+   "keys": "Alt+Down Arrow "
+ },
+ {
+   "desc": "When a menu or submenu is open, move to the next command. ",
+   "keys": "Down Arrow key "
+ },
+ {
+   "desc": "Expand or collapse the Ribbon. ",
+   "keys": "Ctrl+F1 "
+ },
+ {
+   "desc": "Open a context menu. ",
+   "keys": "Shift+F10 or\nContext key (Windows keyboard only)"
+ },
+ {
+   "desc": "Move to the submenu when a main menu is open or selected.",
+   "keys": "Left Arrow key"
+ }
+]
