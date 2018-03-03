@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Login from './Container/Login';
 import Register from './Container/Register';
 import MuiDashboard from './Container/MuiDashboard';
-
+import AskInput from './Components/AskInput';
 import logo from './logo.svg';
 import './App.css';
 
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <Switch>
-            <Route exact path="/users/login" component={Login} />
+            <Route exact path="/users/login" component={AskInput} />
             <Route exact path="/users/register" component={Register} />
             <Route exact path="/users/:email" component={MuiDashboard} />
           </Switch>

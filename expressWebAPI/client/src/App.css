@@ -48,13 +48,17 @@
 }
 
 table {
-  border: 4px solid black;
+  /* border: 4px solid black; */
   border-radius: 4px;
   border-collapse: collapse;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 th {
+  border-top: 2px solid black;
   border-bottom: 2px solid black;
+  font-size: 20px;
 }
 
 tr {
@@ -69,4 +73,25 @@ tr {
 .graphTrueBox {
   background-color: green;
   float:left;
+}
+
+th:first-child,
+td:first-child {
+  width: 450px;
+}
+
+
+
+.descBox {
+  left: 12px;
+  height: 51px;
+  position: absolute;
+  border: 2px solid black;
+  background-color: white;
+  width: 33%;
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
