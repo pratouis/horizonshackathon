@@ -33,6 +33,8 @@ class Dashboard extends Component {
     .catch(err => console.log('error in getting user statistics: '+err) )
   }
   render() {
+    
+
     return(<div>
       <table>
         <thead>
@@ -61,7 +63,7 @@ class Dashboard extends Component {
         }
         </tbody>
       </table>
-    </div>)
+    </div>);
   }
 }
 export default Dashboard;
