@@ -1,20 +1,40 @@
 import express from 'express';
 let router = express.Router();
 import mongoose from 'mongoose';
-import { User, Shortcut } from '../models/models';
+import { User } from '../models/models';
 let shortcuts = require('../models/basic_excel_shortcuts.json');
 /* GET home page. */
-router.get('/', (req, res, next) => {
-  // User.findById(req.user._id)
-  //     .then((user) => res.status(200).json(user))
-  //     .catch((err) => {
-  //       console.log('error in getting user info: ',err);
-  //       res.status(500).json({error: err});
-  //     });
-  // return;
-  // res.render('index', { title: 'Express' });
-  res.json('you did it')
-});
+// router.get('/', (req, res, next) => {
+//   // User.findById(req.user._id)
+//   //     .then((user) => res.status(200).json(user))
+//   //     .catch((err) => {
+//   //       console.log('error in getting user info: ',err);
+//   //       res.status(500).json({error: err});
+//   //     });
+//   // return;
+//   // res.render('index', { title: 'Express' });
+//   res.json('you did it')
+// });
+
+router.get('/:email/track', (req, res, next) => {
+  //console.log('hitting this route');
+  //console.log(req.query.correct, req.query.shortcut);
+  if(req.query.shortcut){
+
+    let index = shortcuts.findIndex(shortcut => shortcut.keys.split(' ').join('') === req.query.shortcut);
+    if(index > -1){
+      User.findOne({email: req.params.email})
+      .then(user => {
+        let _correct = req.query.correct === "true" ? true : false;
+        user.used.set(index,[...user.used[index],_correct]);
+        user.save()
+          .then(newUser => res.send(newUser.used[index]))
+          .catch(err => console.log(`unable to update user: ${req.params.email}\n`, err));
+      })
+      .catch(err => console.log(`unable to find user: ${req.params.email}`));
+    }
+  }
+})
 
 router.get('/:email', (req, res, next) => {
   User.findOne({email: req.params.email})

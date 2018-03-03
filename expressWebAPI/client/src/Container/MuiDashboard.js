@@ -3,7 +3,6 @@ import '../App.css';
 import {
   Table,
   TableBody,
-  TableFooter,
   TableHeader,
   TableHeaderColumn,
   TableRow,
@@ -15,7 +14,6 @@ import PotentialGraph from '../Components/PotentialGraph';
 class MuiDashboard extends Component {
   constructor(props){
     super(props);
-    // console.log(this.props.param);
     this.state = {
       shortcuts: [],
       used: [],

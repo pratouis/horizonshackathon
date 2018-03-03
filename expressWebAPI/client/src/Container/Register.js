@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
+import RaisedButton from 'material-ui/RaisedButton';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AskInput from '../Components/AskInput';
 
 class Register extends Component {
   constructor( props ) {
     super( props );
     this.state = {
-      email: '',
-      password: '',
       registerSuccess: false,
     }
   }
-  register() {
-    if( this.state.email.trim() && this.state.password.trim() ) {
+  register(registerCreds) {
       fetch( "/users/register", {
         method: 'POST',
         headers: {
           "content-type": "application/json"
         },
-        body: JSON.stringify( this.state ),
+        body: JSON.stringify( registerCreds ),
       })
       .then( response => response.json() )
       .then( responseJson => {
@@ -25,23 +26,25 @@ class Register extends Component {
           registerSuccess: true
         })
       })
-    }
   }
   render() {
     return (
       <div>
-        <input type="text" placeholder="Email"
-          onChange={ (e) => this.setState({ email: e.target.value }) } />
-        <br/>
-        <input type="password" placeholder="Password"
-          onChange={ (e) => this.setState({ password: e.target.value }) } />
-        <br/>
-        <button onClick={ () => this.register() } >
-          Register
-        </button>
+        <MuiThemeProvider>
+          <div>
+            <AskInput
+              buttonLabel="register"
+              handleClick={(registerCreds) => this.register(registerCreds)} />
+          <br />
+          <Link to='/user/login'>
+            <RaisedButton label='Back to Login' />
+          </Link>
+
+          </div>
+        </MuiThemeProvider>
         {
           this.state.registerSuccess
-          ? (<Redirect to="/users/login" />)
+          ? (<Redirect to="/user/login" />)
           : null
         }
       </div>

@@ -1,8 +1,7 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import { Redirect } from 'react-router';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 
 class AskInput extends React.Component {
   constructor(props) {
@@ -17,29 +16,12 @@ class AskInput extends React.Component {
 
   handleChange() {
     if(this.state.email && this.state.password){
-      console.log('here');
       this.setState({disable: false});
     }
   }
 
-  handleSubmit() {
-      fetch( "/users/login", {
-        method: 'POST',
-        headers: {
-          "content-type": "application/json"
-        },
-        body: JSON.stringify( this.state ),
-      })
-      .then( response => response.json() )
-      .then( responseJson => {
-        this.setState({
-          loginSuccess: true
-        })
-      })
-  }
   render() {
     return(<div>
-      <MuiThemeProvider>
         <h2>excelerate</h2>
       <TextField
         floatingLabelText="email"
@@ -53,16 +35,10 @@ class AskInput extends React.Component {
     />
     <br />
     <RaisedButton
-      label="Login"
+      label={this.props.buttonLabel}
       disabled={this.state.disable}
-      onClick={() => this.handleSubmit()}
+      onClick={() => this.props.handleClick( this.state )}
       />
-      </MuiThemeProvider>
-      {
-        this.state.loginSuccess
-        ? (<Redirect to={ "/users/" + this.state.email } />)
-        : null
-      }
     </div>);
   }
 }

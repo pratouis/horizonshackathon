@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
-
+import RaisedButton from 'material-ui/RaisedButton';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AskInput from '../Components/AskInput';
 
 
 class Login extends Component {
@@ -9,46 +11,44 @@ class Login extends Component {
     super( props );
     this.state = {
       email: '',
-      password: '',
       loginSuccess: false,
     }
   }
-  login() {
-    if( this.state.email.trim() && this.state.password.trim() ) {
+
+  login(loginCreds) {
       fetch( "/users/login", {
         method: 'POST',
         headers: {
           "content-type": "application/json"
         },
-        body: JSON.stringify( this.state ),
+        body: JSON.stringify(loginCreds ),
       })
       .then( response => response.json() )
       .then( responseJson => {
         this.setState({
-          loginSuccess: true
+          loginSuccess: true,
+          email: loginCreds.email
         })
       })
-    }
   }
+
   render() {
     return (
       <div>
-        <input type="text" placeholder="Email"
-          onChange={ (e) => this.setState({ email: e.target.value }) } />
-        <br/>
-        <input type="password" placeholder="Password"
-          onChange={ (e) => this.setState({ password: e.target.value }) } />
-        <br/>
-        <button onClick={ () => this.login() } >
-          Log In
-        </button>
-        <br/>
-        <Link to="/users/register">
-          <button>Register</button>
-        </Link>
+        <MuiThemeProvider>
+          <div>
+            <AskInput
+              buttonLabel="login"
+              handleClick={(loginCreds) => this.login(loginCreds)} />
+            <br />
+            <Link to='/user/register'>
+              <RaisedButton label='Register' />
+            </Link>
+            </div>
+        </MuiThemeProvider>
         {
           this.state.loginSuccess
-          ? (<Redirect to={ "/users/" + this.state.email } />)
+          ? (<Redirect to={ "/user/" + this.state.email } />)
           : null
         }
       </div>
